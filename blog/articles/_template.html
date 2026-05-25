@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+  ╔══════════════════════════════════════════╗
+  ║  文章模板 - 使用說明                      ║
+  ║  1. 複製此文件並重新命名                   ║
+  ║  2. 替換下方所有 [REPLACE_...] 標記        ║
+  ║  3. 在 ARTICLE_CONTENT 區域撰寫文章         ║
+  ║  4. 更新 blog/index.html 加入新文章連結     ║
+  ╚══════════════════════════════════════════╝
+  -->
+
+  <!-- ===== [REPLACE] 替換以下5個 meta 欄位 ===== -->
+  <title>[REPLACE_ARTICLE_TITLE] | 知行教育中心</title>
+  <meta name="description" content="[REPLACE_ARTICLE_DESCRIPTION — 150-160字，含關鍵詞]">
+  <meta property="og:title" content="[REPLACE_ARTICLE_TITLE]">
+  <meta property="og:description" content="[REPLACE_ARTICLE_DESCRIPTION]">
+  <meta property="og:url" content="https://zhixing-edu.com/blog/articles/[REPLACE_ARTICLE_SLUG].html">
+  <!-- ===== END REPLACE ===== -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://zhixing-edu.com/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://zhixing-edu.com/blog/articles/[REPLACE_ARTICLE_SLUG].html">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="../../assets/css/components.css">
+  <link rel="stylesheet" href="../../assets/css/blog.css">
+
+  <!-- JSON-LD Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "[REPLACE_ARTICLE_TITLE]",
+    "description": "[REPLACE_ARTICLE_DESCRIPTION]",
+    "datePublished": "[REPLACE_DATE_YYYY-MM-DD]",
+    "dateModified": "[REPLACE_DATE_YYYY-MM-DD]",
+    "author": {
+      "@type": "Person",
+      "name": "凱尔周老師"
+    },
+    "publisher": {
+      "@type": "EducationalOrganization",
+      "name": "知行教育中心"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="page-wrapper">
+    <a href="../../index.html" class="logo">
+      <img src="../../assets/images/zhixing-logo.png" alt="知行教育中心" height="48" width="auto" style="height:48px;width:auto;">
+
+    <span class="logo-text">知行教育中心</span>
+
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="選單">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="../../index.html">首頁</a>
+      <a href="../../services/index.html">課程服務</a>
+      <a href="../../blog/index.html" class="active">教育資訊</a>
+      <a href="../../teachers.html">星級導師</a>
+        <a href="../../about.html">關於我們</a>
+      <a href="../../contact.html">聯絡我們</a>
+      <a href="../../contact.html" class="nav-cta">預約試堂</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="page-wrapper">
+    <div class="article-container">
+
+      <!-- ===== Breadcrumbs ===== -->
+      <nav class="breadcrumbs">
+        <a href="../../index.html">首頁</a><span>›</span>
+        <a href="../../blog/index.html">教育資訊</a><span>›</span>
+        [REPLACE_ARTICLE_TITLE_SHORT]
+      </nav>
+
+      <!-- ===== Article ===== -->
+      <article>
+        <header class="article-header">
+          <!-- ===== [REPLACE] 替換文章標題 ===== -->
+          <h1>[REPLACE_ARTICLE_TITLE]</h1>
+          <!-- ===== [REPLACE] 替換日期 ===== -->
+          <div class="article-meta">
+            <time datetime="[REPLACE_DATE_YYYY-MM-DD]">[REPLACE_DATE_YYYY年MM月DD日]</time>
+            <span>作者：凱尔周老師</span>
+          </div>
+        </header>
+
+        <!-- ===== [REPLACE] 在此撰寫文章內容 ===== -->
+        <div class="article-content">
+
+          <p>[REPLACE_引言段落 — 2-3句概括文章要點，吸引讀者繼續閱讀]</p>
+
+          <h2>[REPLACE_第一個小標題]</h2>
+          <p>[REPLACE_段落內容]</p>
+          <p>[REPLACE_段落內容]</p>
+
+          <h2>[REPLACE_第二個小標題]</h2>
+          <p>[REPLACE_段落內容]</p>
+
+          <blockquote>
+            <p>[REPLACE_重點引述或小貼士]</p>
+          </blockquote>
+
+          <h2>[REPLACE_第三個小標題]</h2>
+          <p>[REPLACE_段落內容]</p>
+
+          <div class="highlight-box">
+            <strong>💡 重點總結：</strong> [REPLACE_全文要點總結]
+          </div>
+
+        </div>
+        <!-- ===== END ARTICLE CONTENT ===== -->
+
+        <footer class="article-footer">
+          <!-- Share buttons -->
+          <div class="share-buttons">
+            <span style="font-size:0.9rem;color:var(--color-text-secondary);align-self:center;">分享文章：</span>
+            <a href="https://wa.me/?text=[REPLACE_ARTICLE_TITLE]%20https://zhixing-edu.com/blog/articles/[REPLACE_ARTICLE_SLUG].html" target="_blank" rel="noopener" class="share-btn share-btn--whatsapp">WhatsApp</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://zhixing-edu.com/blog/articles/[REPLACE_ARTICLE_SLUG].html" target="_blank" rel="noopener" class="share-btn share-btn--facebook">Facebook</a>
+            <button class="share-btn share-btn--copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='已複製!';">複製連結</button>
+          </div>
+        </footer>
+      </article>
+
+      <!-- ===== Related Articles ===== -->
+      <!-- [REPLACE] 如有相關文章，更新以下連結 -->
+      <div class="related-articles">
+        <h3>相關文章</h3>
+        <div class="related-articles__grid">
+          <div class="card">
+            <p style="font-size:0.85rem;color:var(--color-text-light);">[REPLACE_DATE]</p>
+            <h4 style="font-size:1rem;"><a href="#">[REPLACE_RELATED_TITLE]</a></h4>
+          </div>
+          <div class="card">
+            <p style="font-size:0.85rem;color:var(--color-text-light);">[REPLACE_DATE]</p>
+            <h4 style="font-size:1rem;"><a href="#">[REPLACE_RELATED_TITLE]</a></h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="text-center mt-lg">
+        <p style="color:var(--color-text-secondary);margin-bottom:var(--space-sm);">覺得有用？分享給需要的朋友！</p>
+        <a href="../../contact.html" class="btn btn-primary">預約試堂查詢</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="page-wrapper">
+    <div class="footer-grid">
+      <div class="footer-info">
+        <h4>知行教育中心 Action Leader Education Centre</h4>
+        <p>香港九龍尖沙咀廣東道188號港景匯商場104舖（港鐵柯士甸站F口、佐敦站C口、西九龍站C口）</p>
+        <p>電話：+852-95430068</p>
+        <p>電郵：ACTIONLEADER@HOTMAIL.COM</p>
+        <div class="footer-social">
+          <a href="https://wa.me/85295430068" target="_blank" rel="noopener">WhatsApp</a>
+	          <a href="https://weixin.qq.com/" target="_blank" rel="noopener">微信：Hkbuxi01</a>
+	          <span style="font-size:0.8rem;">內地電話：18129826502</span>
+          <a href="https://www.xiaohongshu.com/user/profile/凯尔周老师" target="_blank" rel="noopener" class="xhs-link">小紅書：凱尔周老師</a>
+        </div>
+      </div>
+      <div>
+        <h4>課程服務</h4>
+        <a href="../../services/local-elite.html">本地名校入學特訓課</a>
+        <a href="../../services/intl-interview.html">國際學校面試特訓課</a>
+        <a href="../../services/kindergarten-interview.html">幼稚園升小學面試班</a>
+        <a href="../../services/daily-enhancement.html">校內課程提升班</a>
+        <a href="../../services/ielts-toefl.html">IELTS / TOEFL 培訓</a>
+        <a href="../../services/ib-al-sat.html">IB / A Level / SAT 培訓</a>
+      </div>
+      <div>
+        <h4>快速連結</h4>
+        <a href="../../about.html">關於我們</a>
+        <a href="../../blog/index.html">教育資訊</a>
+        <a href="../../contact.html">聯絡我們</a>
+      </div>
+      <div>
+        <h4>關注我們</h4>
+        <div style="margin-bottom:0.75rem;">
+          <img src="../../assets/images/知行公众号二维码.jpg" alt="HK知行學堂公眾號" style="width:110px;height:auto;border-radius:8px;display:block;margin-bottom:0.4rem;">
+          <p style="font-size:0.85rem;line-height:1.5;margin:0;">微信公眾號：<strong>HK知行學堂</strong></p>
+        </div>
+        <p style="font-size:0.8rem;color:var(--color-text-light);line-height:1.5;margin:0;">小紅書搜尋：<strong>凱尔周老師</strong><br>獲取最新教育資訊及優惠</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 知行教育中心 版權所有
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="返回頂部">↑</button>
+<a href="https://wa.me/85295430068" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp查詢">💬</a>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>

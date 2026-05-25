@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://zhixing-edu.com/sitemap.xml
+
+# Disallow template files from indexing
+Disallow: /blog/articles/_template.html
