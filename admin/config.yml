@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Actionleader/zhixing-edu-website
   branch: main
 
@@ -33,7 +33,7 @@ collections:
           - { label: "連結", name: "link", widget: "string", default: "blog/articles/2026-summer-program.html" }
           - { label: "背景圖片", name: "image", widget: "image", default: "assets/images/summer-hero-bg.jpg" }
 
-site_url: https://zhixing-edu.com
-display_url: https://zhixing-edu.com
-logo_url: https://zhixing-edu.com/assets/images/zhixing-logo.png
+site_url: https://actionleader.netlify.app
+display_url: https://actionleader.netlify.app
+logo_url: https://actionleader.netlify.app/assets/images/zhixing-logo.png
 locale: "zh_HK"
