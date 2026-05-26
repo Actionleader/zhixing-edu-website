@@ -33,7 +33,7 @@ collections:
           - { label: "連結", name: "link", widget: "string", default: "blog/articles/2026-summer-program.html" }
           - { label: "背景圖片", name: "image", widget: "image", default: "assets/images/summer-hero-bg.jpg" }
 
-site_url: https://actionleader.netlify.app
-display_url: https://actionleader.netlify.app
-logo_url: https://actionleader.netlify.app/assets/images/zhixing-logo.png
+site_url: https://actionleader.com.hk
+display_url: https://actionleader.com.hk
+logo_url: https://actionleader.com.hk/assets/images/zhixing-logo.png
 locale: "zh_HK"

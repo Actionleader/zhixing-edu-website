@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://zhixing-edu.com/sitemap.xml
+Sitemap: https://actionleader.com.hk/sitemap.xml
 
 # Disallow template files from indexing
 Disallow: /blog/articles/_template.html
