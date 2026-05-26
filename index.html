@@ -13,6 +13,7 @@
   <meta property="og:url" content="https://actionleader.com.hk/">
   <meta property="og:image" content="https://actionleader.com.hk/assets/images/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/components.css">
 
@@ -510,5 +511,16 @@
 <a href="https://wa.me/85295430068" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp查詢">💬</a>
 
 <script src="assets/js/main.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
