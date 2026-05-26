@@ -64,17 +64,30 @@
     <lastmod>2026-05-15</lastmod>
   </url>
 
+  <url>
+    <loc>https://actionleader.com.hk/teachers.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-26</lastmod>
+  </url>
+
   <!-- 博客頁面 -->
   <url>
     <loc>https://actionleader.com.hk/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2026-05-15</lastmod>
+    <lastmod>2026-05-26</lastmod>
   </url>
   <url>
     <loc>https://actionleader.com.hk/blog/articles/2026-05-15-ielts-tips.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <lastmod>2026-05-15</lastmod>
+  </url>
+  <url>
+    <loc>https://actionleader.com.hk/blog/articles/2026-summer-program.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2026-05-26</lastmod>
   </url>
 </urlset>
