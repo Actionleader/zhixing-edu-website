@@ -17,7 +17,10 @@ collections:
       - { label: "發佈日期", name: "date", widget: "datetime" }
       - { label: "摘要", name: "excerpt", widget: "string" }
       - { label: "標籤", name: "tags", widget: "list", default: ["教育資訊"] }
-      - { label: "內文", name: "body", widget: "markdown" }
+      - label: "內文"
+        name: "body"
+        widget: "markdown"
+        sanitize_html: true
 
   - name: "pages"
     label: "頁面內容"
