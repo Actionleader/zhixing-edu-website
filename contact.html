@@ -139,8 +139,14 @@
             <textarea id="form-message" name="message" rows="4" required placeholder="請簡單描述你的查詢..."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-lg">提交查詢</button>
+          <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">提交查詢</button>
         </form>
+
+        <div id="formSuccess" style="display:none;text-align:center;padding:3rem 2rem;background:var(--color-bg-alt);border-radius:16px;border:2px solid #4CAF50;">
+          <div style="font-size:3rem;margin-bottom:1rem;">✅</div>
+          <h3 style="color:#2E7D32;margin-bottom:0.5rem;">謝謝預約！</h3>
+          <p style="color:var(--color-text-secondary);">我們會盡快聯繫您。</p>
+        </div>
       </div>
 
       <!-- Contact Info -->
@@ -250,5 +256,29 @@
 <a href="https://wa.me/85295430068" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp查詢">💬</a>
 
 <script src="assets/js/main.js"></script>
+<script>
+  var form = document.getElementById('contactForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = '提交中...';
+      var data = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      }).then(function() {
+        form.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+      }).catch(function() {
+        btn.disabled = false;
+        btn.textContent = '提交查詢';
+        alert('提交失敗，請稍後再試。');
+      });
+    });
+  }
+</script>
 </body>
 </html>
