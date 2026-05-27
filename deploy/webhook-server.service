@@ -1,0 +1,18 @@
+[Unit]
+Description=GitHub Webhook Server for actionleader.com.hk
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/actionleader.com.hk
+ExecStart=/usr/bin/node /var/www/actionleader.com.hk/deploy/webhook-server.js
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+Environment=WEBHOOK_PORT=9000
+Environment=SITE_DIR=/var/www/actionleader.com.hk
+# Set WEBHOOK_SECRET via: sudo systemctl set-environment WEBHOOK_SECRET=your-secret
+
+[Install]
+WantedBy=multi-user.target
