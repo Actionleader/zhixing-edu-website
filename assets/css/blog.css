@@ -100,6 +100,8 @@
   border-collapse: collapse;
   margin: var(--space-md) 0;
   font-size: 0.95rem;
+  display: block;
+  overflow-x: auto;
 }
 
 .article-content th,
