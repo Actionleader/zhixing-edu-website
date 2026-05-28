@@ -61,3 +61,10 @@ if [ "$BEFORE" != "$AFTER" ]; then
 else
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] No changes (HEAD: $AFTER)"
 fi
+
+# Always rebuild blog articles from CMS markdown (git reset --hard wipes generated HTML)
+BUILD_SCRIPT="/opt/actionleader/build-blog.py"
+if [ -f "$BUILD_SCRIPT" ]; then
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] Running blog build..."
+    python3 "$BUILD_SCRIPT" >> "$LOG_FILE" 2>&1 || echo "[$(date '+%Y-%m-%d %H:%M:%S')] Blog build failed (non-fatal)"
+fi
