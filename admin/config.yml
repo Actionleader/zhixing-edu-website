@@ -20,7 +20,7 @@ collections:
       - label: "內文"
         name: "body"
         widget: "markdown"
-        sanitize_html: false
+        sanitize_html: true
 
   - name: "pages"
     label: "頁面內容"
